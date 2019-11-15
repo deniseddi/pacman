@@ -3,8 +3,8 @@
 
 class Grid 
     def initialize (x = 5, y = 5) 
-        @x = x
-        @y = y
+        @x = x 
+        @y = y 
     end
 
     def valid_x_y_position?(x,y)
