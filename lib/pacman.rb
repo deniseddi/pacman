@@ -52,19 +52,18 @@ class Pacman #PLACE
         pacman_position = @x, @y, @facing
         pacman_position.join(', ')
      end
-    # def move 
-    #     # if robot_placed ( haven't build this method yet...)
-    #     case @facing 
-    #     when 'NORTH'
-    #         current_position(@x, @y + 1)
-    #     end
-    # end
    
-end
 
-# def valid_f_position?
-    #      if (f.upcase == "NORTH"||f.upcase == "EAST"||f.upcase == "SOUTH"||f.upcase == "WEST")
-    #         #??? true / position valid? 
-    #      end
-    # end
+
+    def valid_f_position?(f)
+         if (@facing.upcase == "NORTH"|| @facing.upcase == "EAST" || @facing.upcase == "SOUTH" || @facing.upcase == "WEST")
+            return true
+         else 
+            return false
+         end
+    end
+        
+end
+           
+   
 

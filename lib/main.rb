@@ -18,16 +18,16 @@ class Main
 
     def prompt_user 
         loop do
-            puts "Enter your command here"
+            puts "Enter your command here (MOVE, LEFT, RIGHT, REPORT or PLACE again)"
             input = gets.chomp
             if input.split(' ').include?('PLACE') # the PLACE command is really initialising the pacman
                 # breaking up the input 
                 x, y, f = parse_command(input)
-                 # if statement is now checking to make sure there is a first Place 
-                if @grid.valid_x_y_position?(x,y)
+                 # if statement is now checking to make sure  
+                if @grid.valid_x_y_position?(x,y) # && valid_f_position(f)
                     @pacman = Pacman.new(x, y, f)
                 else
-                    puts "Enter a valid location"
+                    puts "Enter a valid location" # it is never entering here, message is not displaying even when Plass instead of PLACE
                 end
             elsif input == 'MOVE'
                 @pacman.move
@@ -47,7 +47,7 @@ class Main
         # input.split(' ').include?('PLACE')
         x = input.split(' ').last.split(',')[0].to_i
         y = input.split(' ').last.split(',')[1].to_i
-        f = input.split(' ').last.split(',')[2]
+        f = input.split(' ').last.split(',')[2].upcase
         return [x, y, f]
     end
 end
