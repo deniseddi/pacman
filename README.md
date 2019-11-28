@@ -2,7 +2,7 @@
 
 Pacman code challenge
 
-![Image](https://user-images.githubusercontent.com/45111486/69782767-10d94680-1206-11ea-87b6-e546a2681adb.png)
+![Image](https://i.imgur.com/zv0pDgH.png?1)
 
 ## Table of Contents
 
