@@ -7,12 +7,11 @@ class Pacman #PLACE
         @y = y 
         @facing = f
     end
-
     # define methods for pacman's actions/ movements
     def move #MOVE
         case @facing
         when 'NORTH'
-          @y += 1
+          @y += 1 
         when 'SOUTH'
           @y -= 1
         when 'EAST'
@@ -51,18 +50,15 @@ class Pacman #PLACE
     def current_position # REPORT - There should be a method where pacman knows where it is at all times and show/output to REPORT
         pacman_position = @x, @y, @facing
         pacman_position.join(', ')
-     end
-   
-
+    end
 
     def valid_f_position?(f)
-         if (@facing.upcase == "NORTH"|| @facing.upcase == "EAST" || @facing.upcase == "SOUTH" || @facing.upcase == "WEST")
+         if (@facing.upcase == "NORTH" || @facing.upcase == "EAST" || @facing.upcase == "SOUTH" || @facing.upcase == "WEST")
             return true
          else 
             return false
          end
     end
-        
 end
            
    

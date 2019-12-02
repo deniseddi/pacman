@@ -2,10 +2,9 @@ require 'minitest/autorun'
 # require "minitest/reporters" # optional
 # Minitest::Reporters.use!(Minitest::Reporters::SpecReporter.new) # optional
 
-require_relative '../lib/grid' # ##fix location of file 
+require_relative '../lib/grid' #fix location of file ? 
 
 class GridTest < MiniTest::Test
-
     def test_true_for_valid_position
         grid = Grid.new(5,5)
         expected = grid.valid_x_y_position?(2,2)
@@ -23,5 +22,4 @@ class GridTest < MiniTest::Test
         expected = grid.valid_x_y_position?(-3,-3)
         assert_equal false, expected
     end
-
 end

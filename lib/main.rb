@@ -27,7 +27,7 @@ class Main
                 if @grid.valid_x_y_position?(x,y) # && valid_f_position(f)
                     @pacman = Pacman.new(x, y, f)
                 else
-                    puts "Enter a valid location" # it is never entering here, message is not displaying even when Plass instead of PLACE
+                    puts "Enter a valid location" # it is never entering here, message is not displaying even when misspelling e.g Plass instead of PLACE
                 end
             elsif input == 'MOVE'
                 @pacman.move
