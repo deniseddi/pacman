@@ -13,14 +13,14 @@
 
 ## Introduction
 
-Pacman is a variation of the popular Toy robot code challenge. What follows bellow are partly the instructions of the game combined with my thinking notes to build it.
+This Pacman is a variation of the popular Toy robot code challenge. What follows bellow are partly the instructions of the game combined with my thinking notes to build it.
 
 ## Description
 
 **Setting the game**
 
-• Grid: 5x5 units board  
-• Pacman: only one
+• Grid: 5x5 units board.  
+• Pacman: there is only one.
 
 • There are no obstructions to the grid.
 
@@ -28,11 +28,11 @@ Pacman is a variation of the popular Toy robot code challenge. What follows bell
 
 **Commands**
 
-- PLACE: initial position of Pacman on the grid (X, Y, F) chosen by the user as an input. Must be a valid position
-- X: horizontal orientation on board
-- Y: vertical orientation on the board
-- F: Pacman is ‘Facing’ NORTH, SOUTH, EAST or WEST
-- 0,0 (X, Y): can be considered the most south west position on the grid
+- PLACE: initial position of Pacman on the grid (X, Y, F) chosen by the user as an input. Must be a valid position.
+- X: horizontal orientation on board.
+- Y: vertical orientation on the board.
+- F: Pacman is ‘Facing’ NORTH, SOUTH, EAST or WEST.
+- 0,0 (X, Y): can be considered the most south west position on the grid.
 
 PLACE has to be first valid command to be used, only after that, these commands can be followed, in no particular order:
 
@@ -46,18 +46,18 @@ PLACE has to be first valid command to be used, only after that, these commands 
 
 ## Problems to solve
 
-- Choose a programming language to build the game
-- How to build the grid
-- Establish grid’s limits/edges
-- How to define a position and place Pacman on the grid through code
+- Which programming language to build the game.
+- How to build the grid.
+- Establish grid’s limits/edges.
+- How to define a position and place Pacman on the grid through code.
 - Prompt the user. Loop(?) to continue asking for input.
-- How to get the input from the user
-- How to perform a basic move from one position to the next (Move)
-- How to face Pacman (F)
-- How to rotate (Left, Right)
-- How to prevent Pacman from falling off the grid
-- How to ignore commands that would make Pacman fall off the grid
-- How to output the REPORT
+- How to get the input from the user.
+- How to perform a basic move from one position to the next (Move).
+- How to face Pacman (F).
+- How to rotate (Left, Right).
+- How to prevent Pacman from falling off the grid.
+- How to ignore commands that would make Pacman fall off the grid.
+- How to output the REPORT.
 - When does it end?
 
 ## Challenges
