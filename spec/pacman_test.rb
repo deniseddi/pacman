@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative '../lib/pacman' # ##fix location of file 
+require_relative '../lib/pacman' # fix location of file
 
 class PacmanTest < MiniTest::Test
 
